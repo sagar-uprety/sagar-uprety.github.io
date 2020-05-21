@@ -1,0 +1,66 @@
+/* Footer Area css
+============================================================================================ */
+.footer_area {
+  background: #000;
+}
+.footer_inner {
+}
+.f_widget {
+}
+.f_title {
+  margin-bottom: 35px;
+  h3 {
+    color: #fff;
+    font-size: 18px;
+    font-weight: bold;
+    font-family: $hee;
+    margin-bottom: 0px;
+  }
+}
+.ab_widget {
+  p {
+    font-size: 14px;
+    line-height: 24px;
+    font-family: $rob;
+    color: $pfont;
+    margin-bottom: 30px;
+    a {
+      color: $baseColor;
+    }
+    & + p {
+      margin-bottom: 0px;
+    }
+  }
+}
+
+.social_widget {
+  p {
+    font-size: 14px;
+    line-height: 24px;
+    font-family: $rob;
+    color: $pfont;
+    margin-bottom: 10px;
+  }
+  .list {
+    li {
+      margin-right: 17px;
+      display: inline-block;
+      a {
+        color: #cccccc;
+        font-size: 14px;
+        @include transition;
+      }
+      &:last-child {
+        margin-right: 0px;
+      }
+      &:hover {
+        a {
+          color: $baseColor;
+        }
+      }
+    }
+  }
+}
+
+/* End Footer Area css
+============================================================================================ */

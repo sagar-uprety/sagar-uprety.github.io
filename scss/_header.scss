@@ -1,0 +1,65 @@
+//header_area css
+.header_area {
+  position: absolute;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 99;
+  transition: background 0.4s, all 0.3s linear;
+  .navbar {
+    background: transparent;
+    padding: 0px;
+    border: 0px;
+    border-radius: 0px;
+    .nav {
+      .nav-item {
+        margin-right: 45px;
+        .nav-link {
+          font: 500 12px/120px $rob;
+          text-transform: uppercase;
+          color: #fff;
+          padding: 0px;
+          display: inline-block;
+          &:after {
+            display: none;
+          }
+        }
+        &:hover,
+        &.active {
+          .nav-link {
+            color: #fff;
+          }
+        }
+        &:last-child {
+          margin-right: 0px;
+        }
+      }
+    }
+  }
+  //	& + section, & + row, & + div{
+  //		margin-top: 120px;
+  //	}
+  &.navbar_fixed {
+    .main_menu {
+      position: fixed;
+      width: 100%;
+      top: -70px;
+      left: 0;
+      right: 0;
+      background: #000;
+      transform: translateY(70px);
+      transition: transform 500ms ease, background 500ms ease;
+      -webkit-transition: transform 500ms ease, background 500ms ease;
+      box-shadow: 0px 3px 16px 0px rgba(0, 0, 0, 0.1);
+      .navbar {
+        .nav {
+          .nav-item {
+            .nav-link {
+              line-height: 70px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
